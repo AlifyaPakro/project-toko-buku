@@ -31,7 +31,7 @@ include "koneksi.php";
     <div class="card shadow mb-4 w-100">
                         <div class="card-header py-3 d-flex justify-content-between">
                             <h6 class="m-0 font-weight-bold text-primary">Table Data Kategori</h6>
-                            <a href="index.php?page=tambah_obat" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+                            <a href="?page=kategori_tambah" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
                                 Tambah kategori
                             </a>
                         </div>
@@ -41,7 +41,7 @@ include "koneksi.php";
                                     <tr class="text-center">
                                         <th>No</th>
                                         <th>ID</th>
-                                        <th>Nama kategori</th>
+                                        <th>Nama kategori</th>`
                                         <th>Aksi</th>
                                     </tr>
                                     <?php
@@ -53,7 +53,7 @@ include "koneksi.php";
                                         <td><?= $i++; ?></td>
                                         <td><?= $data['id_kategori']; ?></td>
                                         <td><?= $data['kategori']; ?></td>
-                                        <td><a href="?page=kategori_ubah&&id=<?= $data['id_kategori']; ?>" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+                                        <td><a href="?page=kategori_ubah&&id=<?= $data['id_kategori']; ?>" class="d-none d-sm-inline-block btn btn-sm btn-info shadow-sm">
                                             <i class="fa-solid fa-file-pen"></i></a>
                                             <a href="?page=kategori_hapus&&id=<?= $data['kategori']; ?>" onclick="return confirm('apakah anda yakin ingin menghapus data ini?')" class="d-none d-sm-inline-block btn btn-sm btn-danger shadow-sm">
                                             <i class="fa-solid fa-trash">
