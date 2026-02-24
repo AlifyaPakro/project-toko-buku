@@ -2,8 +2,6 @@
 
 include  'koneksi.php';
 
-
-
 ?>
 
 <!DOCTYPE html>
