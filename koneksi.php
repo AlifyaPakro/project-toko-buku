@@ -11,10 +11,8 @@ $nama_database = "perpustakaan-pwpb";
 
 $connect = mysqli_connect($server, $username, $password, $nama_database);
 
-// if(!$connect){
-//     echo "koneksi gagal";
-// }else{
-//     echo "koneksi berhasil";
-// }
+if(!$connect){
+    echo "koneksi gagal";
+}
 
 ?>
